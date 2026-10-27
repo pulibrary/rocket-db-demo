@@ -1,0 +1,2 @@
+[default.databases.sqlx_postgres]
+url = "postgres://postgres:postgres@localhost:5432/rocket_db_demo"
