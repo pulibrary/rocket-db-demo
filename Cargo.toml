@@ -13,5 +13,5 @@ features = ["sqlx_postgres"]
 [dependencies.sqlx]
 version = "0.7.0"
 default-features = false
-features = ["macros"]
+features = ["macros", "migrate"]
 

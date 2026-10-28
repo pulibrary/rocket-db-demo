@@ -9,5 +9,7 @@ fn index() -> &'static str {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().attach(sqlx::stage()).mount("/", routes![index])
+    rocket::build()
+        .attach(sqlx::stage())
+        .mount("/", routes![index])
 }
