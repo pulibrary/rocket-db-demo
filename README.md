@@ -27,4 +27,7 @@ To regenerate it after schema changes run
 
 ## Diesel
 
-The Diesel ORM automatic migrations on startup isn't quite working and I've commented out the inclusion in the main.rs file. 
+The Diesel ORM automatic migrations on startup isn't quite working and I've commented out the inclusion diesel_postgres.rs file.
+
+You will need to run the migrations manually
+`diesel migration run --database-url "postgres://postgres:postgres@localhost:5432/rocket_db_demo_diesel"`
