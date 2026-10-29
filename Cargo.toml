@@ -5,10 +5,12 @@ edition = "2024"
 
 [dependencies]
 rocket = { version = "0.5.2", features = ["json"] }
+diesel = { version = "2.1.6", features = ["postgres"] }
+diesel_migrations = "2"
 
 [dependencies.rocket_db_pools]
 version = "0.2.0"
-features = ["sqlx_postgres"]
+features = ["diesel_postgres", "sqlx_postgres"]
 
 [dependencies.sqlx]
 version = "0.7.0"

@@ -1,9 +1,8 @@
 use rocket::{Rocket, Build, futures};
 use rocket::fairing::{self, AdHoc};
-use rocket_db_pools::{sqlx, Database, Connection};
+use rocket_db_pools::{sqlx, Connection, Database};
 use rocket::response::status::Created;
 use rocket::serde::{Serialize, Deserialize, json::Json};
-
 use futures::{TryFutureExt, TryStreamExt};
 
 #[derive(Database)]
